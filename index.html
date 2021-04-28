@@ -39,7 +39,7 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "swagger.yaml",
+        urls: [{url: "https://raw.githubusercontent.com/reasondigital/Shared-Service-Layer-Search/main/docs/api_example.yml", name: "Search"},{url: "https://sf-develop-uks.wallet.services/swagger/v1/swagger.json", name: "Open Referrals"}],
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
