@@ -39,7 +39,8 @@
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "swagger.yaml",
+        url: "search.json",
+        urls: [{url: "search.api_example.yml", name: "Search"},{url: "swagger.json", name: "Open Referrals"}],
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
