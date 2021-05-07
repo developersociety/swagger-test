@@ -14,8 +14,8 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-        curl https://raw.githubusercontent.com/reasondigital/Shared-Service-Layer-Search/main/docs/api_example.yml | jq . > search.yml
-        curl https://sf-develop-uks.wallet.services/swagger/v1/swagger.json | jq . > referrals.yml
+        curl curl: (23) Failed writing body (402 != 1378) | jq . > search.json
+        curl https://sf-develop-uks.wallet.services/swagger/v1/swagger.json | jq . > referrals.json
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
